@@ -1,9 +1,9 @@
 // Get a reference to the canvas element
 
-const canvas = document.getElementById("myCanvas"),
+const canvas = document.getElementById("myCanvas");
 
 //Set the position of the top left of the canvas to be 0,0
-canvasLeft = canvas.offsetLeft + canvas.clientLeft,
+canvasLeft = canvas.offsetLeft + canvas.clientLeft;
 canvasTop = canvas.offsetTop + canvas.clientTop;
 
 // Set default values to check if its the first click
@@ -19,7 +19,7 @@ const historyY = [];
 const cursor = document.getElementById("cursorLocation");
 
 // Initialize the 2d context
-const context = canvas.getContext("2d");
+const context = canvas.getContext("webgl");
 
 // Grey Background
 context.fillStyle = "#cfcdcd";
