@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas</title>
+    <title>Simple Wireframe Model</title>
 
 </head>
 <body onload="main()">
     <label for="fname">Number of Sides:</label><br>
     <input type="number" id="numSides" name="numSides"><br>
     <label for="fname">Show End Caps:</label>
-    <input type="checkbox" id=""><br><br>
+    <input type="checkbox" id="endcapsTF"><br><br>
     <input type="submit" value="Generate SOR"><br><br>
     
     <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">Your browser does not support the HTML5 canvas tag</canvas>
@@ -19,6 +19,8 @@
     <script src='lib\webgl-debug.js'></script>
     <script src='lib\webgl-utils.js'></script>
     <script src='code\webgl.js'></script>
+
+    
    
 </body>
 </html>
