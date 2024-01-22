@@ -12,9 +12,11 @@
     <label for="fname">Show End Caps:</label>
     <input type="checkbox" id="endcapsTF"><br><br>
     <input type="submit" value="Generate SOR"><br><br>
-    
-    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">Your browser does not support the HTML5 canvas tag</canvas>
-    
+
+    <div id="canvasLayering" style="position: relative; width: 500px; height: 500px;">
+        <canvas id="background" width="500" height="500" style="border:1px solid #000000; z-index: 1;  position:absolute; left:0px; top:0px;">Your browser does not support the HTML5 canvas tag</canvas>
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000; z-index: 2; position:absolute; left:0px; top:0px;">Your browser does not support the HTML5 canvas tag</canvas>
+    </div>
     <script src='lib\cuon-utils.js'></script>
     <script src='lib\webgl-debug.js'></script>
     <script src='lib\webgl-utils.js'></script>
