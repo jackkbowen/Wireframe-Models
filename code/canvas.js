@@ -19,7 +19,7 @@ const historyY = [];
 const cursor = document.getElementById("cursorLocation");
 
 // Initialize the 2d context
-const context = canvas.getContext("webgl");
+const context = canvas.getContext("2d");
 
 // Grey Background
 context.fillStyle = "#cfcdcd";
